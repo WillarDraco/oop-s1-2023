@@ -1,1 +1,4 @@
-test
+Q1. It acts to serve as a changelog.
+Q2. A good commit message identifies what was changed since the last commit.
+Q3. Work should be commited as often as possible, especially after a big change.
+Q4. false
