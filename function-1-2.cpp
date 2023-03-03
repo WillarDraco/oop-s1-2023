@@ -11,6 +11,9 @@ int array_mean(int array[], int n) {
         sum = sum + array[i];
     }
     
+    sum = double(sum);
+    n = double(n);
+
     double average = sum/n;
 
     return average;

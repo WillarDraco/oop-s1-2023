@@ -7,5 +7,5 @@ int main(void) {
     int n = sizeof(array)/sizeof(int);
 
     double average = array_mean(array, n);
-    printf("The average is %f. \n", average);
+    printf("The average is %0.02f. \n", average);
 }
