@@ -1,17 +1,20 @@
 #include <iostream>
 
-int array_mean(int array[], int n) {
-    int sum = 0;
+double array_mean(int array[], int n) {
+    int sumint = 0;
 
     if (n < 1) {
         return 0;
     }
 
     for (int i = 0; i < n; i++) {
-        sum = sum + array[i];
+        sumint = sumint + array[i];
     }
-    
-    double average = sum/n;
+
+    double sum = double(sumint);
+    double ndub = double(n);
+
+    double average = sum/ndub;
 
     return average;
 }
