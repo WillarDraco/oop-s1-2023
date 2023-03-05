@@ -18,6 +18,13 @@ bool is_fanarray(int array[], int n) {
         }
     }
 
+
+    if (n%2 == 0) {
+        n = n;
+    } else {
+        n = n + 1;
+    }
+
     for (int j = 1; j < (n/2); j++) {
         if (array[j - 1] <= array[j]) {
             fan = true;
@@ -26,7 +33,6 @@ bool is_fanarray(int array[], int n) {
             return fan;
         }
     }
-
 
     return fan;
 }
