@@ -6,7 +6,6 @@ double weighted_average(int array[], int n) {
         return 0;
     }
 
-    double count[] = {};
     double counter = 0;
     double weighted_average = 0;
 
