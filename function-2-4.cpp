@@ -2,11 +2,12 @@
 
 bool is_ascending(int array[], int n) {
 
-    if (n < 1) {
-        return false;
-    }
-
     bool ascending = true;
+
+    if (n < 1) {
+        ascending = false;
+        return ascending;
+    }
 
     for (int i = 0; i < n; i++) {
         if (array[i] < array[i + 1]) {
@@ -14,7 +15,6 @@ bool is_ascending(int array[], int n) {
         } else {
             ascending = false;
             return ascending;
-            break;
         }
     }
 
