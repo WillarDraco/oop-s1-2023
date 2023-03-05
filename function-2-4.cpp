@@ -2,7 +2,7 @@
 
 bool is_ascending(int array[], int n) {
 
-    bool ascending = true;
+    bool ascending = false;
 
     if (n < 1) {
         ascending = false;
