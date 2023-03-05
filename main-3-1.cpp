@@ -3,7 +3,7 @@
 extern bool is_fanarray(int[], int);
 
 int main(void) {
-    int array[] = {1,2,3,4,4,3,2,1};
+    int array[] = {2,1,4,2,1};
     int n = sizeof(array)/sizeof(int);
 
     bool fan = is_fanarray(array, n);
