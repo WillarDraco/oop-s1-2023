@@ -12,6 +12,7 @@ int is_identity(int array[10][10]) {
                 id = true;
             } else if (row != column && array[row][column] != 0) {
                 id = false;
+                return 0;
             }
         }
     }
