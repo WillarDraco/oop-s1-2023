@@ -56,10 +56,16 @@ int sum_if_palindrome(int integers[], int length) {
 
     if (length <= 0) {
         return -1;
-    } else if (pal == false) {
-        return -2;
     }
 
-    int sum = sum_array_elements(integers, length);
-    return sum;
+    if (pal == false) {
+        return -2;
+        printf("non");
+    }
+
+    if (pal == true) {
+        int sum = sum_array_elements(integers, length);
+        return sum;
+    }
+    return 0;
 }
