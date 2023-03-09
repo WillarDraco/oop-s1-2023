@@ -26,15 +26,6 @@ bool is_palindrome(int integers[], int length) {
         length = length + 1;
     }
 
-    for (int j = 1; j < (length / 2); j++) {
-        if (integers[j - 1] <= integers[j]) {
-            pal = true;
-        } else {
-            pal = false;
-            return pal;
-        }
-    }
-
     return pal;
 }
 
