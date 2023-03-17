@@ -1,14 +1,11 @@
 #include <iostream>
+#include <math.h>
 
-
-int sum_diagonal(int array[4][4]) {
-    int sum = 0;
-    for (int row = 0; row < 4; row++) {
-        for (int column = 0; column < 4; column++) {
-            if (row == column) {
-                sum = sum + array[row][column];
-            }
+void print_matrix(int array[10][10]) {
+    for (int row = 0; row < 10; row++) {
+        for (int column = 0; column < 10; column++) {
+            printf("%d ", array[row][column]);
         }
+        printf("\n");
     }
-    return sum;
 }
