@@ -1,13 +1,12 @@
-#include <iostream>
-#include <math.h>
+# include <iostream>
 
-extern int sum_if_palindrome(int integers[], int length);
+extern int palindrome_sum(int integers[], int length);
 
 int main(void) {
-    int integers[] = {3,1,3};
-    int length = sizeof(integers) / sizeof(int);
+    int integers[] = {};
+    int length = sizeof(integers)/sizeof(int);
 
-    int sum = sum_if_palindrome(integers, length);
+    int sum = palindrome_sum(integers, length);
 
     printf("%d\n", sum);
 }

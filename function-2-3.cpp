@@ -1,40 +1,31 @@
 #include <iostream>
 #include <math.h>
 
-bool is_palindrome(int integers[], int length) {
-
+bool is_array_palindrome(int integers[], int length) {
     bool pal = false;
-
-    if (length < 1) {
-        pal = false;
-        return pal;
+    
+    if (length <= 0) {
+        return -1;
     }
 
     for (int i = 0; i < length; i++) {
-        if (integers[i] == integers[length - 1 - i]) {
+        if (integers[i] == integers [length - 1 - i]) {
             pal = true;
-        } else {
+        } else if (integers[i] != integers [length - 1 - i]) {
             pal = false;
             return pal;
+            break;
         }
     }
-
-
-    if (length % 2 == 0) {
-        length = length;
-    } else {
-        length = length + 1;
-    }
-
     return pal;
 }
 
-int sum_array_elements(int integers[], int length) {
-    int sum = 0;
-
-    if (length < 1) {
-        return 0;
+int sum_integers(int integers[], int length) {
+    if (length <= 0) {
+        return -1;
     }
+
+    int sum = 0;
 
     for (int i = 0; i < length; i++) {
         sum = sum + integers[i];
@@ -42,21 +33,19 @@ int sum_array_elements(int integers[], int length) {
     return sum;
 }
 
-int sum_if_palindrome(int integers[], int length) {
-    bool pal = is_palindrome(integers, length);
-
+int palindrome_sum(int integers[], int length) {
     if (length <= 0) {
         return -1;
     }
 
+    bool pal = false;
+    pal = is_array_palindrome(integers, length);
+
     if (pal == false) {
         return -2;
-        printf("non");
     }
 
-    if (pal == true) {
-        int sum = sum_array_elements(integers, length);
-        return sum;
-    }
-    return 0;
+    int sum = sum_integers(integers, length);
+
+    return sum;
 }
