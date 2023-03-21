@@ -15,7 +15,6 @@ void hexDigits(int *numbers,int length) {
         return;
     }
     
-    std::cout << std::endl;
     for (int i = 0; i < length; i++) {
         std::cout << i << " ";
         if (numbers[i] >= 0 && numbers[i] < 10) {
