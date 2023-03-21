@@ -13,14 +13,18 @@ int *readNumbers(void) {
 }
 
 bool equalsArray(int *numbers1,int *numbers2,int length) {
-    bool equal = false;
-    for (int i = 0; i < length; i++) {
-        if (numbers1[i] == numbers2[i]) {
-            equal = true;
-        } else {
-            equal = false;
-            return equal;
+    if (length > 0) {
+        bool equal = false;
+        for (int i = 0; i < length; i++) {
+            if (numbers1[i] == numbers2[i]) {
+                equal = true;
+            } else {
+                equal = false;
+                return equal;
+            }
         }
+        return equal;
+    } else {
+        return 0;
     }
-    return equal;
 }
