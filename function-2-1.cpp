@@ -22,22 +22,22 @@ void hexDigits(int *numbers,int length) {
         } else if (numbers[i] >= 10 && numbers[i] <= 15) {
             switch(numbers[i]) {
                 case 10:
-                std::cout << numbers[i] << " " << "A ";
+                std::cout << numbers[i] << " " << "A";
                 break;
                 case 11:
-                std::cout << numbers[i] << " " << "B ";
+                std::cout << numbers[i] << " " << "B";
                 break;
                 case 12:
-                std::cout << numbers[i] << " " << "C ";
+                std::cout << numbers[i] << " " << "C";
                 break;
                 case 13:
-                std::cout << numbers[i] << " " << "D ";
+                std::cout << numbers[i] << " " << "D";
                 break;
                 case 14:
-                std::cout << numbers[i] << " " << "E ";
+                std::cout << numbers[i] << " " << "E";
                 break;
                 case 15:
-                std::cout << numbers[i] << " " << "F ";
+                std::cout << numbers[i] << " " << "F";
                 break;
                 default:
                 break;
