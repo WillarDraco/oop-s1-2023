@@ -14,27 +14,28 @@ int *readNumbers(void) {
 
 void hexDigits(int *numbers,int length) {
     for (int i = 0; i < length; i++) {
+        std::cout << i << " ";
         if (numbers[i] >= 0 && numbers[i] < 10) {
-            std::cout << numbers[i] << " ";
+            std::cout << numbers[i] << " " << numbers[i];
         } else if (numbers[i] >= 10 && numbers[i] < 16) {
             switch(numbers[i]) {
                 case 10:
-                std::cout << "A ";
+                std::cout << numbers[i] << " " << "A ";
                 break;
                 case 11:
-                std::cout << "B ";
+                std::cout << numbers[i] << " " << "B ";
                 break;
                 case 12:
-                std::cout << "C ";
+                std::cout << numbers[i] << " " << "C ";
                 break;
                 case 13:
-                std::cout << "D ";
+                std::cout << numbers[i] << " " << "D ";
                 break;
                 case 14:
-                std::cout << "E ";
+                std::cout << numbers[i] << " " << "E ";
                 break;
                 case 15:
-                std::cout << "F ";
+                std::cout << numbers[i] << " " << "F ";
                 break;
                 default:
                 break;
