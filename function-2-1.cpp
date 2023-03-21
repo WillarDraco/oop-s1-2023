@@ -19,7 +19,7 @@ void hexDigits(int *numbers,int length) {
         std::cout << i << " ";
         if (numbers[i] >= 0 && numbers[i] < 10) {
             std::cout << numbers[i] << " " << numbers[i] << " ";
-        } else if (numbers[i] >= 10 && numbers[i] < 16) {
+        } else if (numbers[i] >= 10 && numbers[i] <= 15) {
             switch(numbers[i]) {
                 case 10:
                 std::cout << numbers[i] << " " << "A ";
