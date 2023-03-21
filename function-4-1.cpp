@@ -10,8 +10,8 @@ int *readNumbers(void) {
     return numbers;
 }
 
-int *secondSmallestSum(int *numbers,int length) {
-    int *sums = new int[10];
+int secondSmallestSum(int *numbers,int length) {
+    int sums[55];
     int sum = 0;
     for (int j = 0; j < length; j++) {
         sum = 0;
@@ -24,5 +24,12 @@ int *secondSmallestSum(int *numbers,int length) {
         }  
         sums[j] = sum;      
     }
-    return sums;
+    
+    int min = 0;
+    for (int k = 0; k < 55; k++) {
+        if (sums[k] <= min) {
+            min = sums[k];
+        }
+    }
+    return min;
 }
