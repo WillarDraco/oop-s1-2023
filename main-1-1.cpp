@@ -1,11 +1,10 @@
+#include "person.h"
 #include <iostream>
+#include <string>
 
-extern int *readNumbers();
-extern void printNumbers(int *numbers, int length);
+extern Person* createPersonArray(int n);
 
 int main(void) {
-    int *numbers = readNumbers();
-    int length = 10;
-    printNumbers(numbers, length);
-    delete(numbers);
+    int n = 5;
+    Person *array = createPersonArray(n);
 }
