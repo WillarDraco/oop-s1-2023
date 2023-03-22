@@ -7,10 +7,10 @@ Person *createPersonArray(int n) {
     p1.name = "John Doe";
     p1.age = 0;
 
-    Person *personArray[n];
+    Person *personArray = new Person[n];
 
     for (int i = 0; i < n; i++) {
-        personArray[i] = &p1;
+        personArray[i] = p1;
     }
-    return *personArray;
+    return personArray;
 }
