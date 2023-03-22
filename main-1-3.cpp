@@ -8,5 +8,5 @@ extern PersonList deepCopyPersonList(PersonList pl);
 int main(void) {
     int n = 5;
     PersonList list = createPersonList(n);
-    list = deepCopyPersonList(list);
+    PersonList copy = deepCopyPersonList(list);
 }
