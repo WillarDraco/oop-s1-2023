@@ -25,9 +25,11 @@ PersonList createPersonList(int n) {
 PersonList deepCopyPersonList(PersonList pl) {
     int n = pl.numPeople;
     PersonList deepCopy;
-    
+
+    Person *newArray = new Person[n];
+
     for (int i = 0; i < n; i++) {
-        deepCopy.people[i] = pl.people[i];
+        newArray[i] = pl.people[i];
     }
     deepCopy.numPeople = n;
     return deepCopy;
