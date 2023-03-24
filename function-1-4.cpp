@@ -23,6 +23,7 @@ PersonList createPersonList(int n) {
 }
 
 PersonList shallowCopyPersonList(PersonList pl) {
-    PersonList deepCopy;
-    deepCopy = pl;
+    PersonList shallowCopy;
+    shallowCopy = pl;
+    return shallowCopy;
 }
