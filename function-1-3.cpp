@@ -23,7 +23,7 @@ PersonList createPersonList(int n) {
 }
 
 PersonList deepCopyPersonList(PersonList pl) {
-    int n = sizeof(pl) / sizeof(PersonList);
+    int n = pl.numPeople;
     PersonList deepCopy;
     
     for (int i = 0; i < n; i++) {
