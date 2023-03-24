@@ -32,5 +32,6 @@ PersonList deepCopyPersonList(PersonList pl) {
         newArray[i] = pl.people[i];
     }
     deepCopy.numPeople = n;
+    deepCopy.people = newArray;
     return deepCopy;
 }
