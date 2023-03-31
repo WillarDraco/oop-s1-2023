@@ -12,9 +12,9 @@ private:
 public:
     Asset() {
     product_type = "";
-    value = 0;
-    }                          // a default constructor 
-
+    value = 0;                           // a default constructor 
+    }
+    
     // a constructor that takes the product type  and value
     Asset(int new_value, string new_product_type);  
 
