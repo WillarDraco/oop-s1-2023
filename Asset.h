@@ -17,7 +17,5 @@ public:
 
     string get_product_type(); // returns the financial asset type 
     int get_value();                   // returns the the value of asset
-
-    ~Asset();       // A default destructor
 };
 #endif
