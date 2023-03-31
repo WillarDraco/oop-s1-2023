@@ -1,11 +1,14 @@
 #include <iostream>
-
-extern int *readNumbers();
-extern void printNumbers(int *numbers, int length);
+#include <string>
+#include "Asset.cpp"
+using namespace std;
 
 int main(void) {
-    int *numbers = readNumbers();
-    int length = 10;
-    printNumbers(numbers, length);
-    delete(numbers);
+    Asset coin(0, "coin");
+    Asset towel;
+
+    cout << coin.get_product_type() << endl;
+    cout << towel.get_product_type() << endl;
+    cout << coin.get_value() << endl;
+    cout << towel.get_value() << endl;
 }
