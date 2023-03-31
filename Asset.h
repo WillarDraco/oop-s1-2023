@@ -1,5 +1,5 @@
-#ifndef ASSET
-#define ASSET
+#ifndef ASSET_H
+#define ASSET_H
 #include <iostream>
 #include <string>
 using namespace std;
