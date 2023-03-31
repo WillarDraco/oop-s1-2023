@@ -1,3 +1,5 @@
+#ifndef ASSET
+#define ASSET
 #include <iostream>
 #include <string>
 using namespace std;
@@ -11,10 +13,11 @@ public:
     Asset();                            // a default constructor 
 
     // a constructor that takes the product type  and value
-    Asset(int value, string product_type);      
+    Asset(int new_value, string new_product_type);  
 
     string get_product_type(); // returns the financial asset type 
     int get_value();                   // returns the the value of asset
 
-                      // A default destructor
+    ~Asset();       // A default destructor
 };
+#endif
