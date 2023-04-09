@@ -28,18 +28,16 @@ void ParkingLot::parkVehicle(Vehicle *newVehicle) {
     }
 }
 
-void ParkingLot::unparkVehicle(int ID) {
+void ParkingLot::unparkVehicle(int ID){
     bool unparked = false;
     for (int i = 0; i < maxVehicles; i++) {
-        if (vehicles[i].getID() == ID) {
+        if(vehicles[i].getID() == ID) {
             vehicles[i] = Vehicle();
             currentVehicles = currentVehicles - 1;
-            unparked = true;  
-            break;
+            unparked = true;     
         }
     }
-
     if (unparked == false) {
-        std::cout << "Vehicle not in the Lot \n";
+        std::cout << "Vehicle not in the lot" << std::endl;
     }
 }
