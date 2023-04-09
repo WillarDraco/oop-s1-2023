@@ -8,8 +8,8 @@ Vehicle::Vehicle() {
     ID = 0;
 }
 
-Vehicle::Vehicle(time_t entryTime, int it_ID) {
-    timeOfEntry = entryTime;
+Vehicle::Vehicle(int it_ID) {
+    timeOfEntry = time(NULL);
     ID = it_ID;
 }
 

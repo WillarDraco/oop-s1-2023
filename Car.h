@@ -7,6 +7,8 @@
 
 class Car : private Vehicle {
     public:
+        Car();
+        Car(int ID);
         int getParkingDuration();
 };
 #endif
