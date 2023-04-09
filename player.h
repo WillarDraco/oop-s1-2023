@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Player {
     private:
         string name;
@@ -14,5 +16,9 @@ class Player {
         void takeDamage(int damage);
         int getHealth();
         int setHealth(int health);
+        string getName();
+        string setName(string name);
+        int setDamage();
+        int getDamage(int damage);
 };
 #endif

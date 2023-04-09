@@ -10,17 +10,28 @@ Player::Player(string name, int health, int damage) {
     this->damage = damage;
 }
 
-int getHealth() {
+int Player::getHealth() {
     return health;
 }
 
-int setHealth(int health) {
+int Player::setHealth(int health) {
     this->health = health;
 }
 
-void attack(Player* opponent, int damage) {
-    opponent->health = health - takeDamage
+void Player::attack(Player* opponent, int damage) {
+    opponent->health = health - damage;
 }
-void takeDamage(int damage) {
 
+void Player::takeDamage(int damage) {
+    cout << name << " takes " << damage << " damage. Remaining health: " << health << endl;
 }
+
+string Player::getName() {
+    return name
+}
+
+string setName(string name);
+
+int setDamage();
+
+int getDamage();
