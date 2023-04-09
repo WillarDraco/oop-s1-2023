@@ -1,11 +1,11 @@
-#ifndef MOTORBIKE_H
-#define MOTORBIKE_H
+#ifndef CAR_H
+#define CAR_H
 #include <iostream>
 #include <string>
 #include <time.h>
 #include "Vehicle.h"
 
-class Motorbike : private Vehicle {
+class Car : private Vehicle {
     public:
         int getParkingDuration();
 };
