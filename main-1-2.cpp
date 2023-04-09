@@ -8,5 +8,5 @@
 using namespace std;
 
 int main(void) {
-    ParkingLot p1(10);
+    ParkingLot p1(3);
 }
