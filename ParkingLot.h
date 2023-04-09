@@ -13,7 +13,7 @@ class ParkingLot {
         Vehicle vehicles[];
         ParkingLot(int maxVehicles);
         int getCount();
-        void parkVehicles(Vehicle newVehicle);
+        void parkVehicle(Vehicle newVehicle);
         void unparkVehicle(int ID);
 };
 #endif

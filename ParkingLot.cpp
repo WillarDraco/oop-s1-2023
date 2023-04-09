@@ -12,7 +12,7 @@ int ParkingLot::getCount() {
     return currentVehicles;
 }
 
-void ParkingLot::parkVehicles(Vehicle newVehicle) {
+void ParkingLot::parkVehicle(Vehicle newVehicle) {
     if (currentVehicles < maxVehicles) {
         vehicles[currentVehicles] = newVehicle;
         currentVehicles = currentVehicles + 1;
