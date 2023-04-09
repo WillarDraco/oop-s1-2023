@@ -3,10 +3,10 @@
 #include <time.h>
 #include "ParkingLot.h"
 
-ParkingLot::ParkingLot(int maxVehicles) {
-    vehicles = new Vehicle[maxVehicles];
+ParkingLot::ParkingLot(int maxSize) {
+    vehicles = new Vehicle[maxSize];
     currentVehicles = 0;
-    this->maxVehicles = maxVehicles;
+    maxVehicles = maxSize;
 }
 
 int ParkingLot::getCount() {
