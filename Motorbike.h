@@ -5,7 +5,7 @@
 #include <time.h>
 #include "Vehicle.h"
 
-class Motorbike : private Vehicle {
+class Motorbike : public Vehicle {
     public:
         Motorbike();
         Motorbike(int ID);
