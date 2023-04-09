@@ -8,9 +8,9 @@ Car::Car() {
     ID = 0;
 }
 
-Car::Car(int it_ID) {
+Car::Car(int ID) {
     timeOfEntry = time(NULL);
-    ID = it_ID;
+    this->ID = ID;
 }
 
 int Car::getParkingDuration() {
