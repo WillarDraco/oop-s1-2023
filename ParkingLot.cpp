@@ -30,6 +30,7 @@ void ParkingLot::unparkVehicle(int ID) {
             }
         }
     }
+    currentVehicles = currentVehicles - 1;
     if (ID > currentVehicles) {
         std::cout << "Vehicle not in the Lot";
     }
