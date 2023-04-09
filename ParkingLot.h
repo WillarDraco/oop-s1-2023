@@ -9,12 +9,14 @@ class ParkingLot {
     private:
         int maxVehicles;
         int currentVehicles;
-        Vehicle vehicles[];
+        Vehicle *vehicles;
     public:
         ParkingLot(int maxVehicles);
         int getCount();
         void parkVehicle(Vehicle *newVehicle);
         void unparkVehicle(int ID);
-        void deleteLot();
+        ~ParkingLot(){
+            delete[] vehicles;
+        }
 };
 #endif

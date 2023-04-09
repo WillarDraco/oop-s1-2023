@@ -4,8 +4,9 @@
 #include "ParkingLot.h"
 
 ParkingLot::ParkingLot(int maxVehicles) {
-    Vehicle *vehicles[maxVehicles];
+    vehicles = new Vehicle[maxVehicles];
     currentVehicles = 0;
+    this->maxVehicles = maxVehicles;
 }
 
 int ParkingLot::getCount() {
@@ -13,12 +14,12 @@ int ParkingLot::getCount() {
 }
 
 void ParkingLot::parkVehicle(Vehicle *newVehicle) {
-    if (currentVehicles < maxVehicles) {
-        vehicles[currentVehicles] = *newVehicle;
-        currentVehicles = currentVehicles + 1;
-    } else {
+    if (currentVehicles == maxVehicles) {
         std::cout << "The lot is full. \n";
         return;
+    } else {
+        vehicles[currentVehicles] = *newVehicle;
+        currentVehicles = currentVehicles + 1;
     }
 }
 
@@ -34,8 +35,4 @@ void ParkingLot::unparkVehicle(int ID) {
     if (ID > currentVehicles) {
         std::cout << "Vehicle not in the Lot \n";
     }
-}
-
-void ParkingLot::deleteLot() {
-    delete[] vehicles;
 }
