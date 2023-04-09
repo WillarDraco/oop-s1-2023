@@ -3,6 +3,12 @@
 #include <time.h>
 #include "ParkingLot.h"
 
+ParkingLot::ParkingLot() {
+    vehicles = new Vehicle[0];
+    currentVehicles = 0;
+    maxVehicles = 0;
+}
+
 ParkingLot::ParkingLot(int maxSize) {
     vehicles = new Vehicle[maxSize];
     currentVehicles = 0;

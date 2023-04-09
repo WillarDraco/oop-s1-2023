@@ -12,6 +12,7 @@ class ParkingLot {
         int currentVehicles;
         Vehicle* vehicles;
     public:
+        ParkingLot();
         ParkingLot(int maxSize);
         int getCount();
         void parkVehicle(Vehicle *newVehicle);
