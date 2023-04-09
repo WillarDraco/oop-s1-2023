@@ -1,5 +1,6 @@
 #ifndef PARKINGLOT_H
 #define PARKINGLOT_H
+
 #include <iostream>
 #include <string>
 #include <time.h>
@@ -9,7 +10,7 @@ class ParkingLot {
     private:
         int maxVehicles;
         int currentVehicles;
-        Vehicle *vehicles;
+        Vehicle* vehicles;
     public:
         ParkingLot(int maxSize);
         int getCount();
