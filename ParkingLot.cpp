@@ -24,7 +24,7 @@ void ParkingLot::parkVehicle(Vehicle *newVehicle){
         std::cout << "The lot is full" << std::endl;
     } else {   
         vehicles[currentVehicles] = *newVehicle;
-        currentVehicles++;
+        currentVehicles = currentVehicles + 1;
     }
 }
 
