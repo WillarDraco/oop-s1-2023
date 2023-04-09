@@ -26,8 +26,8 @@ void ParkingLot::parkVehicle(Vehicle *newVehicle) {
 void ParkingLot::unparkVehicle(int ID) {
     for (int i = 0; i < currentVehicles; i++) {
         if (vehicles[i].getID() == ID) {
-            for (int j = i; j < currentVehicles - 1; j++) {
-                vehicles[j] = vehicles[j + 1];
+            for (int j = i; j < maxVehicles; j++) {
+                vehicles[j] = Vehicle();
             }
             currentVehicles = currentVehicles - 1;
         }
