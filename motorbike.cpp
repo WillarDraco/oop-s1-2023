@@ -6,4 +6,4 @@
 int Motorbike::getParkingDuration() {
     int parkingDuration = (time(NULL) - timeOfEntry) - (0.15*(time(NULL) - timeOfEntry));
     return parkingDuration;
-}
+} 

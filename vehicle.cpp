@@ -15,4 +15,4 @@ Vehicle::Vehicle(time_t entryTime, int it_ID) {
 
 int Vehicle::getID() {
     return ID;
-}
+} 
