@@ -16,7 +16,6 @@ int ParkingLot::getCount() {
 void ParkingLot::parkVehicle(Vehicle *newVehicle) {
     if (currentVehicles == maxVehicles) {
         std::cout << "The lot is full. \n";
-        return;
     } else {
         vehicles[currentVehicles] = *newVehicle;
         currentVehicles = currentVehicles + 1;
@@ -24,16 +23,16 @@ void ParkingLot::parkVehicle(Vehicle *newVehicle) {
 }
 
 void ParkingLot::unparkVehicle(int ID) {
+    bool unparked = false;
     for (int i = 0; i < currentVehicles; i++) {
         if (vehicles[i].getID() == ID) {
-            for (int j = i; j < maxVehicles; j++) {
-                vehicles[j] = Vehicle();
-            }
+            vehicles[i] = Vehicle();
             currentVehicles = currentVehicles - 1;
+            unparked = true;
         }
     }
 
-    if (ID > currentVehicles) {
+    if (unparked == false) {
         std::cout << "Vehicle not in the Lot \n";
     }
 }
