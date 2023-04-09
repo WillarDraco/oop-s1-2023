@@ -1,12 +1,11 @@
 #include <iostream>
-#include <string>
-#include <time.h>
+#include "Vehicle.h"
+#include "ParkingLot.h"
 #include "Car.h"
 #include "Bus.h"
 #include "Motorbike.h"
-#include "ParkingLot.h"
-using namespace std;
 
-int main(void) {
-    ParkingLot p1(3);
+int main() {
+
+ParkingLot p1(10);
 }

@@ -32,9 +32,11 @@ void ParkingLot::unparkVehicle(int ID) {
     bool unparked = false;
     for (int i = 0; i < maxVehicles; i++) {
         if (vehicles[i].getID() == ID) {
-            vehicles[i] = Vehicle();
+            for (int j = 0; j < maxVehicles - 1; j++)
+            vehicles[j] = vehicles[j + 1];
             currentVehicles = currentVehicles - 1;
             unparked = true;
+            break;
         }
     }
 
