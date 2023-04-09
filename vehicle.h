@@ -13,4 +13,4 @@ class Vehicle {
         Vehicle(time_t timeOfEntry, int ID);
         int getID();
 };
-#endif 
+#endif

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <time.h>
-#include "vehicle.h"
+#include "Vehicle.h"
 
 Vehicle::Vehicle() {
     timeOfEntry = time(NULL);
@@ -15,4 +15,4 @@ Vehicle::Vehicle(time_t entryTime, int it_ID) {
 
 int Vehicle::getID() {
     return ID;
-} 
+}
