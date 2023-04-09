@@ -34,3 +34,7 @@ void ParkingLot::unparkVehicle(int ID) {
         std::cout << "Vehicle not in the Lot";
     }
 }
+
+void ParkingLot::deleteLot() {
+    delete[] vehicles;
+}

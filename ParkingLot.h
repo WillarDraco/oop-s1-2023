@@ -15,5 +15,6 @@ class ParkingLot {
         int getCount();
         void parkVehicle(Vehicle *newVehicle);
         void unparkVehicle(int ID);
+        void deleteLot();
 };
 #endif
