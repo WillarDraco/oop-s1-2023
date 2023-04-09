@@ -20,7 +20,7 @@ int ParkingLot::getCount() {
 }
 
 void ParkingLot::parkVehicle(Vehicle *newVehicle) {
-    if (currentVehicles == maxVehicles) {
+    if (getCount() == maxVehicles) {
         std::cout << "The lot is full. \n";
     } else {
         vehicles[currentVehicles] = *newVehicle;
