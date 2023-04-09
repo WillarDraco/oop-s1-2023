@@ -9,8 +9,8 @@ class ParkingLot {
     private:
         int maxVehicles;
         int currentVehicles;
-    public:
         Vehicle vehicles[];
+    public:
         ParkingLot(int maxVehicles);
         int getCount();
         void parkVehicle(Vehicle newVehicle);
