@@ -12,9 +12,9 @@ int ParkingLot::getCount() {
     return currentVehicles;
 }
 
-void ParkingLot::parkVehicle(Vehicle newVehicle) {
+void ParkingLot::parkVehicle(Vehicle *newVehicle) {
     if (currentVehicles < maxVehicles) {
-        vehicles[currentVehicles] = newVehicle;
+        vehicles[currentVehicles] = *newVehicle;
         currentVehicles = currentVehicles + 1;
     } else {
         std::cout << "The lot is full. \n";

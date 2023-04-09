@@ -13,7 +13,7 @@ class ParkingLot {
     public:
         ParkingLot(int maxVehicles);
         int getCount();
-        void parkVehicle(Vehicle newVehicle);
+        void parkVehicle(Vehicle *newVehicle);
         void unparkVehicle(int ID);
 };
 #endif
