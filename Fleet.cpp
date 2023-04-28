@@ -4,7 +4,7 @@
 #include "Ford.h"
 
 Fleet::Fleet() {
-    fleet = new Car*[5];
+    fleet = new Car*[6];
     Tesla S('s', 10000);
     Ford f1(1, 20000);
     Car car(30000);
