@@ -8,6 +8,6 @@ class Fleet {
         Car** fleet;
     public:
         Fleet();
-        Car **get_fleet();
+        Car** get_fleet(); //returns the array of pointers to the 5 objects
 };
 #endif
