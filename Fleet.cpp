@@ -5,7 +5,7 @@
 
 Fleet::Fleet() {
     fleet = new Car*[6];
-    Tesla S('s', 10000);
+    Tesla S('S', 10000);
     Ford f1(1, 20000);
     Car car(30000);
     Ford f2(2, 40000); 
