@@ -1,11 +1,10 @@
+#include "appliance.cpp"
 #include <iostream>
 
-extern int *readNumbers();
-extern void printNumbers(int *numbers, int length);
-
 int main(void) {
-    int *numbers = readNumbers();
-    int length = 10;
-    printNumbers(numbers, length);
-    delete(numbers);
+    Appliance toaster(120);
+    std::cout << toaster.get_isOn() << std::endl;
+    toaster.turnOn();
+    std::cout << toaster.get_isOn() << std::endl;
+    std::cout << toaster.get_power_rating() << std::endl;
 }
