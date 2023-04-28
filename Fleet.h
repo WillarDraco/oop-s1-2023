@@ -8,6 +8,6 @@ class Fleet {
         Car** fleet;
     public:
         Fleet();
-        Car **get_Fleet();
+        Car **get_fleet();
 };
 #endif

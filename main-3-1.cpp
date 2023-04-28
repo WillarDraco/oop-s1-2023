@@ -3,5 +3,5 @@
 
 int main(void) {
     Fleet f1();
-    std::cout << *f1.get_Fleet() << std::endl;
+    std::cout << *f1->get_fleet() << std::endl;
 }
