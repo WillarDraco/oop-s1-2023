@@ -26,7 +26,6 @@ void Tesla::drive(int kms) {
     } else if (kms < 500) {
         emissions = 74 * kms;
         batteryPercentage = batteryPercentage - (distance / 5);
-        std::cout << batteryPercentage << std::endl;
     }
     
 }
