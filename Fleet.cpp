@@ -19,6 +19,5 @@ Fleet::Fleet() {
 }
 
 Car** Fleet::get_fleet() {
-    Car** array = fleet;
-    return array;
+    return fleet;
 }
