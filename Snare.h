@@ -12,7 +12,7 @@ class Snare : public Spot, Influence {
     public:
         Snare() {
         }
-        
+
         Snare(int x, int y) {
             location = std::make_tuple(x, y);
             category = 'S';
@@ -28,7 +28,7 @@ class Snare : public Spot, Influence {
         }
 
         void implement(Spot& spot) {
-            operative = false;
+            this->operative = false;
             spot.setCategory('S');
         }
 };
