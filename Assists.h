@@ -18,8 +18,8 @@ class Assists {
         static double evaluateDistance(std::tuple<int, int> loc1, std::tuple<int, int> loc2) { //(returns the Euclidean distance between two locations).
             int xs = std::get<0>(loc2) - std::get<0>(loc1);
             int ys = std::get<1>(loc2) - std::get<1>(loc1);
-            xs = abs(xs);
-            ys = abs(ys);
+            xs = pow(xs,2);
+            ys = pow(ys,2);
             double distance = sqrt((xs + ys));
             return distance;
         }
