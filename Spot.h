@@ -9,6 +9,9 @@ class Spot {
         std::tuple<int, int> location; //(representing the spot's location),
         char category; //(representing the type of entity in the spot)
     public:
+        Spot() {
+        }
+
         Spot(int x, int y, char category) {
             location = std::make_tuple(x, y);
             this->category = category;

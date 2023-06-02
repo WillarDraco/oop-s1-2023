@@ -4,13 +4,21 @@
 #include <iostream>
 #include <tuple>
 #include <cmath>
+#include "Spot.h"
 
 class Assists {
     public:
         static std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight) { //(returns a random location within the game's matrix. (0,0) should be the first location),
-            int x = (rand() % (matrixWidth + 1));
-            int y = (rand() % (matrixHeight + 1));
-            std::tuple<int, int> location = std::make_tuple(x, y);
+            std::tuple<int, int> location = std::make_tuple(0,0);
+
+            if (spot->getCount() == 0) {
+                location = std::make_tuple(0,0);
+            } else {
+                int x = (rand() % (matrixWidth + 1));
+                int y = (rand() % (matrixHeight + 1));
+                std::tuple<int, int> location = std::make_tuple(x, y);}
+
+        
             return location;
         }
 
