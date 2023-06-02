@@ -20,11 +20,7 @@ class Snare : public Spot, Influence {
         }
 
         bool isOperative() {
-            if (operative = true) {
-                return true;
-            } else {
-                return false;
-            }
+            return operative;
         }
 
         void implement(Spot& spot) {
