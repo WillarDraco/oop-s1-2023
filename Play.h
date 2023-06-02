@@ -33,7 +33,7 @@ class Play {
                 x = std::get<0>(random);
                 y = std::get<1>(random);
                 Persona* persona = new Persona(x, y);
-                matrix[x][y] = persona;
+                matrix[x] = persona;
             }
 
             for (int i = 0; i < numSnares; i++) {
