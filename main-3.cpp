@@ -9,5 +9,5 @@
 #include "Play.h"
 
 int main(void) {
-    Spot spot(0,0);
+    Spot spot(0,0, 'S');
 }
