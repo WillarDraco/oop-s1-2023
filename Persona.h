@@ -5,7 +5,7 @@
 #include <tuple>
 #include "Spot.h"
 
-class Persona : protected Spot {
+class Persona : public Spot {
     public:
         Persona(int x, int y) {
             location = std::make_tuple(x, y);

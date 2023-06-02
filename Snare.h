@@ -6,7 +6,7 @@
 #include "Spot.h"
 #include "Influence.h"
 
-class Snare : protected Spot, Influence {
+class Snare : public Spot, Influence {
     private:
         bool operative;
     public:
