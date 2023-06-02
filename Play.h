@@ -41,7 +41,7 @@ class Play {
                 x = std::get<0>(random);
                 y = std::get<1>(random);
                 Snare* snare = new Snare(x, y);
-                matrix[x][y] = snare;
+                matrix[x] = snare;
             }
         }
 
@@ -51,7 +51,6 @@ class Play {
                 for (int width = 0; width < length; width++) {
                     for (int height = 0; height < length; height++) {
                         if (matrix[width][height].getCategory() == 'P') {
-                            matrix[width][height].shift(1,0);
 
                         }
                     }
