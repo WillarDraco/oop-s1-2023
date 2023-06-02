@@ -10,5 +10,6 @@ int main(void) {
     Snare snare(1,2);
     Persona* persona = new Persona(0,0);
     persona->shift(1,2);
-
+    snare.implement(persona);
+    
 }

@@ -12,7 +12,6 @@ class Assists {
             std::tuple<int, int> location = std::make_tuple(0,0);
             int x = (rand() % (matrixWidth + 1));
             int y = (rand() % (matrixHeight + 1));
-            location = std::make_tuple(x, y);
             return location;
         }
 
