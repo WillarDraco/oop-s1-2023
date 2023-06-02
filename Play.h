@@ -58,5 +58,9 @@ class Play {
                 
             }
         }
+
+        std::vector<Spot*> getMatrix() {
+            return matrix;
+        }
 };
 #endif
