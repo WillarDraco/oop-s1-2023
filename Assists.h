@@ -10,8 +10,8 @@ class Assists {
     public:
         static std::tuple<int, int> createRandomLoc(int matrixWidth, int matrixHeight) { //(returns a random location within the game's matrix. (0,0) should be the first location),
             std::tuple<int, int> location = std::make_tuple(0,0);
-            int x = (rand() % (matrixWidth + 1));
-            int y = (rand() % (matrixHeight + 1));
+            int x = (rand() % (matrixWidth));
+            int y = (rand() % (matrixHeight));
             return location;
         }
 
