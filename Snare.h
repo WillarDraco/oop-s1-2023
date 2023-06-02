@@ -10,6 +10,9 @@ class Snare : public Spot, Influence {
     private:
         bool operative;
     public:
+        Snare() {
+        }
+        
         Snare(int x, int y) {
             location = std::make_tuple(x, y);
             category = 'S';

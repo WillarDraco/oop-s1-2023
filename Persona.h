@@ -7,6 +7,9 @@
 
 class Persona : public Spot {
     public:
+        Persona() {
+        }
+        
         Persona(int x, int y) {
             location = std::make_tuple(x, y);
             category = 'P';
